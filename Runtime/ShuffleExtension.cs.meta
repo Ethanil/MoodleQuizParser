@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 19c8a6516e2721d4e8b0a5151a57ec49
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 143604
+  packageName: Citizens Pro 2019
+  packageVersion: 1.0
+  assetPath: Assets/Citizens PRO/Scripts/Utils/ShfuffleExtension.cs
+  uploadId: 396064
