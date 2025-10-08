@@ -12,5 +12,9 @@
   ],
   "author": {
     "name": "Ruben Gielisch"
+  },
+  "dependencies": {
+    "com.unity.mathematics": "1.2.6",
+    "com.unity.visualscripting": "1.8.0"
   }
 }
