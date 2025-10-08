@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Quiz/MatchingAnswer.uss?fileID=7433441132597879392&amp;guid=03d085316a923c048903d7f35dd9ad7d&amp;type=3#MatchingAnswer" />
+    <ui:VisualElement name="answer-background">
+        <ui:VisualElement name="texts" style="flex-grow: 1;">
+            <ui:VisualElement name="answer" style="flex-grow: 1; flex-direction: row; align-self: stretch;">
+                <ui:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." name="answer-text" style="max-width: 75%;" />
+                <ui:VisualElement name="v-spacer" style="flex-grow: 1;" />
+                <ui:Button text="Auswählen" parse-escape-sequences="true" display-tooltip-when-elided="true" name="open-list-select" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

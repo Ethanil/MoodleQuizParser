@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Quiz/ClozeQuestion.uss?fileID=7433441132597879392&amp;guid=4cfbbbe0cf476464992609f4e5a221d0&amp;type=3#ClozeQuestion" />
+    <ui:VisualElement name="question-background">
+        <ui:VisualElement name="question-content">
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="question-text" class="question-text" />
+            <ui:Label name="general-feedback-text" />
+        </ui:VisualElement>
+        <ui:VisualElement name="question-controls">
+            <ui:Button text="Frage abgeben" parse-escape-sequences="true" display-tooltip-when-elided="true" name="submit-question-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

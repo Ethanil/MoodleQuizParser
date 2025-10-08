@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Quiz/CalculatedQuestion.uss?fileID=7433441132597879392&amp;guid=7afcc1adfebe8f34a95f8dac7bd60cb9&amp;type=3#CalculatedQuestion" />
+    <ui:VisualElement name="question-background">
+        <ui:VisualElement name="question-content">
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="question-text" class="question-text" />
+            <ui:Label name="general-feedback-text" />
+            <ui:VisualElement name="v-spacer" />
+            <ui:VisualElement name="answer-content">
+                <ui:TextField picking-mode="Ignore" label="Antwort" name="answer" style="font-size: 24px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="question-controls">
+            <ui:Button text="Frage abgeben" parse-escape-sequences="true" display-tooltip-when-elided="true" name="submit-question-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

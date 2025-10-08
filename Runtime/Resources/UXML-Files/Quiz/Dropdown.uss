@@ -1,0 +1,6 @@
+.unity-base-dropdown__label{
+    white-space: normal;
+}
+.unity-base-dropdown__checkmark{
+	display: none;
+}

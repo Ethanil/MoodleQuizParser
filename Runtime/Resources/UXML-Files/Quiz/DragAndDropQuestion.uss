@@ -1,0 +1,85 @@
+/* #image-container {
+    align-self: stretch;
+    align-items: flex-start;
+    flex-grow: 3;
+}
+
+.dropZone {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    position: absolute;
+    align-self: stretch;
+    -unity-text-align: middle-left;
+    flex-wrap: nowrap;
+}
+
+#draggable-container {
+    flex-direction: row;
+}
+
+.draggableElement {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    font-size: 20px;
+    background-color: rgb(173, 173, 173);
+    white-space: normal;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+
+.image {
+}
+
+.backgroundImage {
+    -unity-background-scale-mode: scale-to-fit;
+    flex-grow: 1;
+    align-self: stretch;
+}
+
+.draggableElementContainer {
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+#draggables {
+    height: 20%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#draggable-container .draggableElementContainer {
+    max-width: 12.5%;
+}
+
+.dropZone .draggableElementContainer {
+}
+
+.dropZone .draggableElement {
+    max-width: 100%;
+}
+
+.feedback-container {
+    flex-grow: 1;
+}
+ */

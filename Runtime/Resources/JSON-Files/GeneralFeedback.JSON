@@ -1,0 +1,122 @@
+{
+    "PerfektFeedback": {
+        "FirstPart": [
+            "Super!",
+            "Herzlichen Glückwunsch!",
+            "Perfekt!",
+            "Bravo!",
+            "Ausgezeichnet!",
+            "Super!",
+            "Gut gemacht!",
+            "Richtig!",
+            "Korrekt!",
+            "Treffer!",
+            "Genau richtig!"
+        ],
+        "SecondPart": [
+            "Dein Wissen zu dieser Aufgabe ist perfekt!",
+            "Du hast die richtige Antwort gewählt.",
+            "Deine Antwort(en) ist korrekt.",
+            "Du hast das richtig beantwortet.",
+            "Deine Antwort stimmt.",
+            "Genau die richtige Antwort.",
+            "Das ist die richtige Lösung.",
+            "Du hast die Frage korrekt beantwortet.",
+            "Du hast die richtige Antwort gegeben.",
+            "Das ist die richtige Antwort.",
+            "Deine Antwort ist vollkommen korrekt."
+        ],
+        "ThirdPart": [
+            "Klasse!",
+            "Großartige Arbeit!",
+            "Weiter so!",
+            "Tolle Leistung!",
+            "Du hast ein gutes Verständnis gezeigt.",
+            "Mach weiter so!",
+            "Du hast das prima hinbekommen.",
+            "Klasse!",
+            "Sehr gut!",
+            "Weiter so mit deinem tollen Einsatz!",
+            "Hervorragend!"
+        ]
+    },
+    "MediumFeedback": {
+        "FirstPart": [
+            "Die Richtung stimmt!",
+            "Fast richtig!",
+            "Nicht schlecht!",
+            "Gute Arbeit!",
+            "Nahe dran!",
+            "Gut gemacht!",
+            "Fast perfekt!",
+            "Schön versucht!",
+            "Gute Richtung!",
+            "Toller Ansatz!",
+            "Weiter so!"
+        ],
+        "SecondPart": [
+            "Du hast die Aufgabe teilweise korrekt gelöst.",
+            "Du hast einen guten Ansatz gezeigt.",
+            "Du bist auf dem richtigen Weg.",
+            "Du hast viele richtige Elemente erkannt.",
+            "Du hast schon viel richtig gemacht.",
+            "Du bist nah dran.",
+            "Du hast das meiste richtig.",
+            "Du hast die Grundidee erfasst.",
+            "Du liegst größtenteils richtig.",
+            "Du hast die Hauptpunkte richtig erkannt.",
+            "Du hast schon viel richtig beantwortet."
+        ],
+        "ThirdPart": [
+            "Es ist aber noch Luft nach oben. Sieh Dir noch einmal die Lernunterlagen an, damit Du Dein Wissen vervollständigen kannst.",
+            "Überprüfe noch einmal die Details.",
+            "Es fehlt nur ein kleiner Schritt zur vollständigen Lösung.",
+            "Schau dir noch einmal die fehlenden Teile an.",
+            "Ein paar Korrekturen und du bist da.",
+            "Überprüfe nochmals die spezifischen Punkte.",
+            "Ein paar kleine Anpassungen sind noch nötig.",
+            "Arbeite an den Feinheiten, um zur vollständigen Lösung zu gelangen.",
+            "Einige Details müssen noch korrigiert werden.",
+            "Überprüfe noch einmal die fehlenden Aspekte.",
+            "Ein paar Überarbeitungen, und du hast es geschafft."
+        ]
+    },
+    "LowFeedback": {
+        "FirstPart": [
+            "Bleib dran!",
+            "Der Versuch zählt!",
+            "Nicht ganz richtig!",
+            "Weiter so!",
+            "Nicht ganz!",
+            "Kopf hoch!",
+            "Fast geschafft!",
+            "Weiter üben!",
+            "Gute Anstrengung!",
+            "Nicht entmutigen lassen!",
+            "Noch nicht ganz!"
+        ],
+        "SecondPart": [
+            "Dein Wissen hat noch viele Lücken.",
+            "Leider ist das nicht korrekt.",
+            "Du hast dir Mühe gegeben, aber das ist nicht die richtige Antwort.",
+            "Das war leider nicht korrekt, aber aus Fehlern lernt man.",
+            "Deine Antwort ist leider falsch.",
+            "Diesmal war es nicht richtig, aber bleib dran.",
+            "Auch wenn diese Antwort nicht richtig war, bleib motiviert und versuche es noch einmal.",
+            "Diese Antwort war nicht korrekt, aber jeder Fehler bringt dich näher an die richtige Lösung.",
+            "Deine Antwort war leider nicht richtig.",
+            "Auch wenn diese Antwort falsch war, nutze es als Chance, um noch mehr zu lernen.",
+            "Diese Antwort war leider nicht korrekt."
+        ],
+        "ThirdPart": [
+            "Bitte beschäftige Dich noch einmal intensiv mit den Lernmaterialien, um diese Lücken zu schließen!",
+            "Versuche es noch einmal und überprüfe die Details.",
+            "Schau dir die Frage noch einmal an.",
+            "Versuch es noch einmal!",
+            "Lies die Frage und die verfügbaren Informationen nochmals sorgfältig durch.",
+            "Du schaffst das beim nächsten Versuch!",
+            "Denk nochmal über die Frage nach und versuch es erneut.",
+            "Sieh dir die Erklärungen an und probiere es nochmal."
+        ]
+    }
+}

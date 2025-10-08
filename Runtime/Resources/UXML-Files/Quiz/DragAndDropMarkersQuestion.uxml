@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Quiz/DragAndDropMarkersQuestion.uss?fileID=7433441132597879392&amp;guid=f1202cfb82838a84385cb7765d56db86&amp;type=3#DragAndDropMarkersQuestion" />
+    <ui:VisualElement name="question-background">
+        <ui:VisualElement name="question-content">
+            <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="question-text" class="question-text" style="flex-shrink: 0; flex-grow: 1; height: auto;" />
+            <ui:Label name="general-feedback-text" class="general-feedback-text" />
+            <ui:VisualElement name="v-spacer" />
+            <ui:VisualElement name="draggablesMarkers" />
+        </ui:VisualElement>
+        <ui:VisualElement name="v-spacer" />
+        <ui:VisualElement name="question-controls">
+            <ui:Button text="Frage abgeben" parse-escape-sequences="true" display-tooltip-when-elided="true" name="submit-question-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
