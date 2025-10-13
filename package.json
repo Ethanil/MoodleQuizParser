@@ -1,6 +1,6 @@
 {
   "name": "de.tu-darmstadt.serious-games.moodlequizparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Moodle Quiz Parser",
   "description": "This is a Parser to transform Moodle Quizes xml's into C# objects",
   "unity": "2022.3",
