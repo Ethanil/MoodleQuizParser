@@ -30,7 +30,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
         }
         public static void LoadJson()
         {
-            TextAsset jsonAsset = Resources.Load<TextAsset>("JSON-Files/GeneralFeedback");
+            TextAsset jsonAsset = Resources.Load<TextAsset>("de.tu-darmstadt.serious-games.moodlequizparser/JSON-Files/GeneralFeedback");
             data = JsonUtility.FromJson<FeedbackData>(jsonAsset.text);
         }
         static FeedbackData data = null;

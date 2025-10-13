@@ -141,17 +141,17 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
 
         public QuestionControllerFactory(VisualElement quizContent, VisualElement root)
         {
-            m_MultipleChoiceQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/MultipleChoiceQuestion");
-            m_MultipleChoiceAnswerTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/MultipleChoiceAnswer");
-            m_SingleChoiceAnswerTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/SingleChoiceAnswer");
-            m_DragAndDropQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/DragAndDropQuestion");
-            m_DragAndDropMarkersQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/DragAndDropMarkersQuestion");
-            m_MatchingQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/MatchingQuestion");
-            m_MatchingQuestionAnswerTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/MatchingAnswer");
-            m_HelpDialogTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/HelpDialog");
-            m_CalculatedQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/CalculatedQuestion");
-            m_OrderingQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/OrderingQuestion");
-            m_ClozeQuestionTemplate = Resources.Load<VisualTreeAsset>("UXML-Files/Quiz/ClozeQuestion");
+            m_MultipleChoiceQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/MultipleChoiceQuestion");
+            m_MultipleChoiceAnswerTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/MultipleChoiceAnswer");
+            m_SingleChoiceAnswerTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/SingleChoiceAnswer");
+            m_DragAndDropQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/DragAndDropQuestion");
+            m_DragAndDropMarkersQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/DragAndDropMarkersQuestion");
+            m_MatchingQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/MatchingQuestion");
+            m_MatchingQuestionAnswerTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/MatchingAnswer");
+            m_HelpDialogTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/HelpDialog");
+            m_CalculatedQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/CalculatedQuestion");
+            m_OrderingQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/OrderingQuestion");
+            m_ClozeQuestionTemplate = Resources.Load<VisualTreeAsset>("de.tu-darmstadt.serious-games.moodlequizparser/UXML-Files/Quiz/ClozeQuestion");
             m_QuizContent = quizContent;
             m_Root = root;
         }

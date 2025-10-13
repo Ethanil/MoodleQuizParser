@@ -1,3 +1,5 @@
+## 1.0.5
+Use package specific resource directory to load resources
 ## 1.0.4
 Actually Initialize the QuizController
 ## 1.0.3
