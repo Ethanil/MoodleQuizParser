@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using TUDarmstadt.SeriousGames.MoodleQuizParser;
 
 public class ActionManager
@@ -23,5 +24,5 @@ public class ActionManager
     /// <summary>
     /// A hook for the user to connect to their UIManager.
     /// </summary>
-    public static Action OnCloseView;
+    public static Action<List<QuizResult>> OnCloseView;
 }

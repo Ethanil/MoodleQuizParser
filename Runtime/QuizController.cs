@@ -104,7 +104,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
             m_Questions.Clear();
             m_SubmittedQuestions.Clear();
             m_CurrentQuestionIndex = -1;
-            ActionManager.OnCloseView?.Invoke();
+            ActionManager.OnCloseView?.Invoke(results);
         }
 
 

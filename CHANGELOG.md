@@ -1,3 +1,5 @@
+## 1.0.7
+Add results to closequiz hook
 ## 1.0.6
 Add a Hook for closing the quiz
 ## 1.0.5
