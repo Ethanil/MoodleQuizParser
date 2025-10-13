@@ -19,4 +19,9 @@ public class ActionManager
     /// A hook for the user to connect to their Audiosystem.
     /// </summary>
     public static Action OnButtonPressed;
+
+    /// <summary>
+    /// A hook for the user to connect to their UIManager.
+    /// </summary>
+    public static Action OnCloseView;
 }

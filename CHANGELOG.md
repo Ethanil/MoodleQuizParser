@@ -1,3 +1,5 @@
+## 1.0.6
+Add a Hook for closing the quiz
 ## 1.0.5
 Use package specific resource directory to load resources
 ## 1.0.4
