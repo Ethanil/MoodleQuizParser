@@ -1,7 +1,4 @@
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UIElements;
 namespace TUDarmstadt.SeriousGames.MoodleQuizParser
@@ -22,19 +19,9 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
         Label m_QuestionCountLabel;
         private bool m_IsUnskippable = false;
 
-
-
-        public static List<Question> QuestionDatas;
-
-        private QuizController(VisualElement root)
+        public QuizController(VisualElement root)
         {
             this.Root = root;
-        }
-        public static async Task<QuizController> CreateAsync(VisualElement root, TextAsset questions)
-        {
-            var service = new QuizController(root);
-            await service.Initialize(questions);
-            return service;
         }
 
         internal void RegisterButtonCallbacks()
@@ -96,19 +83,12 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
             m_SubmitQuestionButton.style.display = DisplayStyle.None;
             m_NextQuestionButton.style.display = DisplayStyle.Flex;
         }
-        public async Task Initialize(TextAsset xmlTextAsset)
+        public void Initialize()
         {
             m_QuizContent = Root.Q<VisualElement>("quizcontent");
             m_QuestionCountLabel = Root.Q<Label>("question-count-label");
             m_QuestionFactory = new QuestionControllerFactory(m_QuizContent, Root);
 
-            if (xmlTextAsset != null)
-            {
-                using (MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(xmlTextAsset.text)))
-                {
-                    QuestionDatas = await XMLParser.ParseXML(stream);
-                }
-            }
             RegisterButtonCallbacks();
         }
 
