@@ -1,3 +1,5 @@
+## 1.0.4
+Actually Initialize the QuizController
 ## 1.0.3
 Move Actions into own class because generics and static fields don't work well :)
 ## 1.0.2

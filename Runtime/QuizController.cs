@@ -22,6 +22,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
         public QuizController(VisualElement root)
         {
             this.Root = root;
+            Initialize();
         }
 
         internal void RegisterButtonCallbacks()
