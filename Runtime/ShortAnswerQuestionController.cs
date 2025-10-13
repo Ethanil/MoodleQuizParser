@@ -36,7 +36,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
                 m_InteractionElement = m_Root.Q<TextField>("answer");
             if (m_InteractionElement == null)
                 m_InteractionElement = new TextField();
-            m_InteractionElement.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
+            m_InteractionElement.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
             return m_InteractionElement;
         }
         protected override void Grade()

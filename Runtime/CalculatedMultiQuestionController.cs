@@ -81,7 +81,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
                 m_AnswerControllers[index].SetAnswerText(item);
                 m_AnswerControllers[index].FillAnswerText();
                 item.RegisterCallback<MouseDownEvent>((MouseDownEvent evt) => OnMouseDownEvent(evt, index));
-                item.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
+                item.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
             };
             if (m_Question.ShuffleAnswers)
                 m_AnswerControllers.Shuffle();

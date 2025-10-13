@@ -90,7 +90,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
             target.CapturePointer(evt.pointerId);
             Enabled = true;
             ToggleShowAllFittingZones();
-            AbstractQuestionController<Question>.PlayButtonSound();
+            ActionManager.OnButtonPressed?.Invoke();
         }
 
         // This method checks whether a drag is in progress and whether target has captured the pointer.
@@ -186,7 +186,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
             {
                 target.ReleasePointer(evt.pointerId);
                 ToggleShowAllFittingZones();
-                AbstractQuestionController<Question>.PlayButtonSound();
+                ActionManager.OnButtonPressed?.Invoke();
 
             }
         }

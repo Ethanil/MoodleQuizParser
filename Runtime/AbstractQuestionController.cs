@@ -16,22 +16,6 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
         protected Label m_FeedbackText;
         protected T m_Question;
         public bool GotAddedToRootAtLeastOnce = false;
-        /// <summary>
-        /// A hook for the user to provide their own data saving logic.
-        /// Passes the Question ID (int) and the Result (QuizResult).
-        /// </summary>
-        public static Action<int, QuizResult> OnSaveResult;
-
-        /// <summary>
-        /// A hook for the user to connect to their own event or message system.
-        /// Passes the Result (QuizResult).
-        /// </summary>
-        public static Action<QuizResult> OnQuizGraded;
-
-        /// <summary>
-        /// A hook for the user to connect to their Audiosystem.
-        /// </summary>
-        public static Action OnButtonPressed;
         public void AddToRoot()
         {
             GotAddedToRootAtLeastOnce = true;
@@ -90,14 +74,10 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
         void GradeAndSave()
         {
             Grade();
-            OnSaveResult?.Invoke(m_Question.QuestionID, m_Result);
-            OnQuizGraded?.Invoke(m_Result);
+            ActionManager.OnSaveResult?.Invoke(m_Question.QuestionID, m_Result);
+            ActionManager.OnQuizGraded?.Invoke(m_Result);
         }
 
-        public static void PlayButtonSound()
-        {
-            OnButtonPressed?.Invoke();
-        }
         protected abstract void Grade();
 
         protected virtual void FillFeedback()

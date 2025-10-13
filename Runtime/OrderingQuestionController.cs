@@ -40,8 +40,8 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
                 m_Answers = m_Root.Q<ListView>("answers");
             if (m_Answers == null)
                 m_Answers = new ListView();
-            m_Answers.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
-            m_Answers.RegisterCallback<PointerUpEvent>((PointerUpEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
+            m_Answers.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
+            m_Answers.RegisterCallback<PointerUpEvent>((PointerUpEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
             m_Answers.makeItem = () =>
             {
                 var label = new Label();

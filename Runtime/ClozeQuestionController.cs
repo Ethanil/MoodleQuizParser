@@ -55,7 +55,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
                         clozeTextField.style.minWidth = inputWidth;
                         m_SubQuestionVisualElements.Add(clozeTextField);
                         currentTextRow.Add(clozeTextField);
-                        clozeTextField.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
+                        clozeTextField.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
                         break;
                     case ClozeSubQuestion.ClozeType.MULTICHOICE:
                     case ClozeSubQuestion.ClozeType.MULTICHOICE_S:
@@ -68,7 +68,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
                             answers.Add(answer.Answertext);
                         }
                         dropdownField.choices.AddRange(answers);
-                        dropdownField.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
+                        dropdownField.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
                         m_SubQuestionVisualElements.Add(dropdownField);
                         currentTextRow.Add(dropdownField);
                         break;
@@ -119,7 +119,7 @@ namespace TUDarmstadt.SeriousGames.MoodleQuizParser
                 m_AnswerControllers[index].SetAnswerText(item);
                 m_AnswerControllers[index].FillAnswerText();
                 item.RegisterCallback<MouseDownEvent>((MouseDownEvent evt) => OnMouseDownEvent(evt, index, isSingleQuestion, m_AnswerControllers));
-                item.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => PlayButtonSound(), TrickleDown.TrickleDown);
+                item.RegisterCallback<PointerDownEvent>((PointerDownEvent evt) => ActionManager.OnButtonPressed?.Invoke(), TrickleDown.TrickleDown);
             };
             listView.itemsSource = m_AnswerControllers;
             return listView;

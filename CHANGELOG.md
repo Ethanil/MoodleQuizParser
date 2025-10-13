@@ -1,3 +1,5 @@
+## 1.0.3
+Move Actions into own class because generics and static fields don't work well :)
 ## 1.0.2
 Add Audioplay Action for easier hooking
 ## 1.0.1
